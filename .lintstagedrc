@@ -1,0 +1,3 @@
+{
+  "src/": ["pnpm prettier:format", "pnpm eslint:format"]
+}

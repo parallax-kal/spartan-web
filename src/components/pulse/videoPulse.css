@@ -1,0 +1,42 @@
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  --inner-radius: 20px;
+  width: calc(var(--inner-radius) * 2);
+  height: calc(var(--inner-radius) * 2);
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 calc(var(--inner-radius) - 0.4em) transparent,
+    0 0 0 var(--inner-radius) #f57b0048;
+  position: relative;
+}
+
+.circle::before,
+.circle::after {
+  content: '';
+  position: absolute;
+  width: calc(var(--inner-radius) * 2 * 2);
+  height: calc(var(--inner-radius) * 2 * 2);
+  border: 1px solid #f57c00;
+  border-radius: 50%;
+  animation: pulse 2s ease-out infinite;
+}
+
+.circle::after {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    filter: opacity(0.9);
+  }
+
+  to {
+    transform: scale(2);
+    filter: opacity(0);
+  }
+}
