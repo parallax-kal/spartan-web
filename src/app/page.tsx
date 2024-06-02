@@ -8,7 +8,7 @@ import Services from '@/components/home/Services';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Home"
+  title: "Spartan | Home"
 }
 
 
