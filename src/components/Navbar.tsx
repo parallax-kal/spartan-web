@@ -89,7 +89,7 @@ const Navbar: FC<NavbarProps> = () => {
         </div>
         <Link
           href={'/order'}
-          className="hidden font-semibold text-primary-yellow underline md:block"
+          className="hidden font-semibold text-primary-yellow md:block"
         >
           Order now
         </Link>
@@ -112,7 +112,7 @@ const Navbar: FC<NavbarProps> = () => {
               </DropdownMenuItem>
             ))}
             <DropdownMenuItem className="!mt-6">
-              <Link href={'/order'} className="mx-auto font-semibold text-primary-yellow underline">
+              <Link href={'/order'} className="mx-auto font-semibold text-primary-yellow">
                 Order now
               </Link>
             </DropdownMenuItem>
