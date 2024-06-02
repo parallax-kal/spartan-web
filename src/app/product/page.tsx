@@ -8,9 +8,15 @@ import { qualities } from '@/lib/constants';
 import { glory } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import { SparkleIcon } from 'lucide-react';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
+
+export const metadata: Metadata = {
+  title: "Product"
+}
+
 
 interface pageProps {}
 

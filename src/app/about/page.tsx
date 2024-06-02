@@ -5,8 +5,14 @@ import Articles from '@/components/about/Articles';
 import Members from '@/components/about/Members';
 import LargeHeading from '@/components/ui/LargeHeading';
 import { ArrowRight, Play } from 'lucide-react';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { FC } from 'react';
+
+
+export const metadata: Metadata = {
+  title: "About us"
+}
 
 const page: FC = () => {
   return (

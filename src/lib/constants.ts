@@ -129,16 +129,16 @@ export const footerItems: IfooterData[] = [
 interface Imember {
   name: string;
   role: string;
-  tel: string;
+  email: string;
   image: string | StaticImageData;
 }
 
 export const members: Imember[] = [
-  { name: 'Robert Mugabe', role: 'UX/UI Designer', image: member, tel: '+250 799 999 999' },
-  { name: 'Robert Mugabe', role: 'UX/UI Designer', image: member, tel: '+250 799 999 999' },
-  { name: 'Robert Mugabe', role: 'UX/UI Designer', image: member, tel: '+250 799 999 999' },
-  { name: 'Robert Mugabe', role: 'UX/UI Designer', image: member, tel: '+250 799 999 999' },
-  { name: 'Robert Mugabe', role: 'UX/UI Designer', image: member, tel: '+250 799 999 999' }
+  { name: 'KALISA INEZA Giovanni', role: 'Team leader and mobile Developer', image: member, email: 'giovanni@spartancorp.io' },
+  { name: 'Hirwa Ghislain', role: 'UX/UI Designer & Embedded specialist', image: member, email: 'ghislain@spartancorp.io' },
+  { name: 'Abijuru Chance Regine', role: 'AI & ML Engineer', image: member, email: 'chance@spartancorp.io' },
+  { name: 'Imbabazi Faith', role: 'Backend Developer', image: member, email: 'faith@spartancorp.io' },
+  { name: 'Fadhili Josue', role: 'Frontend Developer', image: member, email: 'fadhili@spartancorp.io' }
 ];
 
 // about page

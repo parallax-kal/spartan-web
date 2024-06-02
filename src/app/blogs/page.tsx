@@ -2,9 +2,15 @@ import { mammy } from '@/assets/images';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import LargeHeading from '@/components/ui/LargeHeading';
 import { Button } from '@/components/ui/button';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { title } from 'process';
 import { FC } from 'react';
+
+export const metadata: Metadata = {
+  title: "Blog"
+}
+
 
 interface IBlog {
   title: string;

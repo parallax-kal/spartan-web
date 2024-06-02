@@ -5,10 +5,16 @@ import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { glory } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import { FC } from 'react';
 
 interface pageProps {}
+
+export const metadata: Metadata = {
+  title: "Products"
+}
+
 
 const product = {
   image: creep,

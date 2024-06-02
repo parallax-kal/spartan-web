@@ -5,6 +5,12 @@ import Features from '@/components/home/Features';
 import GetStarted from '@/components/home/GetStarted';
 import Partners from '@/components/home/Partners';
 import Services from '@/components/home/Services';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Home"
+}
+
 
 export default function Home() {
   return (
