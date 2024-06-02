@@ -9,8 +9,7 @@
     "lint": "next lint",
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\"",
-    "eslint:format": "eslint ./src --fix",
-    "prepare": "husky"
+    "eslint:format": "eslint ./src --fix"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
@@ -40,7 +39,6 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
-    "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "postcss": "^8",
     "prettier": "^3.2.5",
