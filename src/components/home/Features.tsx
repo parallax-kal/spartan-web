@@ -45,18 +45,17 @@ const Features: FC<FeaturesProps> = ({}) => {
           </div>
         </div>
         <div className="mt-20 flex-1">
-          <p className={cn(lexend.className, 'text-[#06345F]')}>$ how we protect babies</p>
+          <p className={cn(lexend.className, 'text-[#06345F]')}>how we protect babies</p>
           <LargeHeading className="my-6 max-w-lg lg:text-2xl">
             Connect and Learn from different care centers globally{' '}
           </LargeHeading>
           <p className="font-semibold">we connect you with other parents across the world</p>
           <p className="my-4 text-[#989898]">
-            Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti
-            unix.
+          Our rotating baby sleep surface offers:
           </p>
           <ul className="mb-8 list-inside list-disc">
-            <li>Lorem ipsum sat amet consectutur adionscinci</li>
-            <li>Lorem ipsum sat amet consectutur adionscinci</li>
+            <li>Advanced AI monitoring for real-time position detection.</li>
+            <li>Gentle and smooth rotation to keep your baby in a safe sleeping position.</li>
           </ul>
           <Link
             href={'#'}
@@ -78,14 +77,14 @@ const Features: FC<FeaturesProps> = ({}) => {
           </LargeHeading>
           <p className="font-semibold">we connect you with other parents across the world</p>
           <p className="my-4 text-[#989898]">
-            Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti
-            unix.
+          Our rotating baby sleep surface offers:
           </p>
           <ul className="mb-8 grid list-disc grid-cols-2 gap-3 [&>li]:ml-3">
-            <li>Lorem ipsum sat amet consectutur adionscinci</li>
-            <li>Lorem ipsum sat amet consectutur adionscinci</li>
-            <li>Lorem ipsum sat amet consectutur adionscinci</li>
-            <li>Lorem ipsum sat amet consectutur adionscinci</li>
+            <li>Advanced AI monitoring for real-time position detection.</li>
+            <li>Gentle and smooth rotation to keep your baby in a safe sleeping position.</li>
+            <li>Customizable sensitivity settings for personalized safety.</li>
+            <li>Non-toxic, baby-friendly materials for a comfortable sleeping environment</li>
+            <li>Instant notifications sent to your mobile app if your baby is missing from the surface.</li>
           </ul>
           <Link
             href={'#'}

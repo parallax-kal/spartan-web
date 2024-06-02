@@ -10,34 +10,33 @@ interface FaqsProps {}
 
 const faqs: { question: string; answer: string }[] = [
   {
-    question:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic,  aliquem in , handerti unix.Lorem ipsum',
+    question: 'How does the rotating surface help keep my baby safe?',
     answer:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum '
+      'The rotating surface ensures that if your baby rolls onto their stomach while sleeping, it gently rotates to bring them back to a safer position. This reduces the risk of suffocation and helps prevent Sudden Infant Death Syndrome (SIDS).'
   },
   {
-    question:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic,  aliquem in , handerti unix.Lorem ipsum',
+    question: 'Is the rotating surface safe for my baby to sleep on?',
     answer:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum '
+      "Yes, the rotating surface has been designed with safety in mind. It uses smooth, gentle movements to adjust your baby's position without causing discomfort. The materials used are non-toxic and baby-friendly, ensuring a safe sleeping environment."
   },
   {
-    question:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic,  aliquem in , handerti unix.Lorem ipsum',
+    question: "How does the AI in the mobile app detect the baby's sleeping position?",
     answer:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum '
+      'The AI utilizes advanced image recognition and movement detection algorithms to monitor your baby’s position in real-time. It alerts the rotating surface mechanism if your baby is in a potentially unsafe position, prompting the surface to adjust accordingly.'
   },
   {
-    question:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic,  aliquem in , handerti unix.Lorem ipsum',
+    question: 'Can I customize the sensitivity of the position detection?',
     answer:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum '
+      "Yes, the mobile app allows parents to customize the sensitivity settings according to their baby's sleeping patterns. You can adjust how quickly the surface responds to changes in your baby's position to ensure optimal safety and comfort."
   },
   {
-    question:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic,  aliquem in , handerti unix.Lorem ipsum',
+    question: 'What happens if the rotating surface malfunctions or the app loses connection?',
     answer:
-      'Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum Lorem ipsum sat amet consectutur adionscing erit ut et musca nic, aliquem in , handerti unix.Lorem ipsum '
+      'The rotating surface is equipped with fail-safe mechanisms to prevent malfunctions. In case of a power outage or app disconnection, the surface will lock into a neutral, safe position. Additionally, the app will send you an alert to check on your baby’s safety manually.'
+  },
+  {
+    question: "What is the price of the rotating baby sleep surface?",
+    answer: "The rotating baby sleep surface is priced at $99.9. This includes the surface itself, the accompanying mobile app, and access to our customer support for any assistance you might need."
   }
 ];
 

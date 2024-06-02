@@ -31,8 +31,8 @@ const Services: FC = ({}) => {
       <MaxWidthWrapper className="flex flex-col space-y-6 lg:items-center">
         <LargeHeading>Our Services</LargeHeading>
         <p className="max-w-xl font-medium">
-          There are many variations of passages of lorem ipsum available, but the majority have
-          suffered alteration in some form,by injected humour.
+          There are many variations of baby sleep safety products available, but our solution stands
+          out with its innovative design and advanced technology.
         </p>
         <div className="!mt-20 grid w-full gap-5 sm:grid-cols-2 sm:gap-8 md:gap-14 lg:grid-cols-3">
           {services.map(({ Icon, title, description }, i) => (

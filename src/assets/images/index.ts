@@ -39,3 +39,7 @@ export { default as spartansCreep } from './baby-crib-bumper-handmade-8-knotted-
 export { default as toys } from './toys.jpg';
 export { default as increaseIcon } from './Increase.png';
 export { default as shoppingCart } from './ShoppingCart.png';
+
+// members
+export { default as giovanni } from './giovanni.jpg';
+export { default as ghislain } from './ghislain.png';

@@ -78,7 +78,7 @@ const Members: FC = ({}) => {
                 height={100}
                 width={100}
                 alt={e.name + 'photo'}
-                className="h-5/6 w-5/6 object-contain"
+                className="h-5/6 w-5/6 object-cover rounded-full"
               />
             </div>
             <h1 className="text-xl font-bold">{e.name}</h1>

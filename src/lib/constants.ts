@@ -8,7 +8,9 @@ import {
   member,
   mobileApp,
   munchkin,
-  parents
+  parents,
+  giovanni,
+  ghislain,
 } from '@/assets/images';
 import { Icons } from '@/components/Icons';
 import { ServicesCardProps } from '@/components/home/Services';
@@ -134,8 +136,8 @@ interface Imember {
 }
 
 export const members: Imember[] = [
-  { name: 'KALISA INEZA Giovanni', role: 'Team leader and mobile Developer', image: member, email: 'giovanni@spartancorp.io' },
-  { name: 'Hirwa Ghislain', role: 'UX/UI Designer & Embedded specialist', image: member, email: 'ghislain@spartancorp.io' },
+  { name: 'KALISA INEZA Giovanni', role: 'Team leader and mobile Developer', image: giovanni, email: 'giovanni@spartancorp.io' },
+  { name: 'Hirwa Ghislain', role: 'UX/UI Designer & Embedded specialist', image: ghislain, email: 'ghislain@spartancorp.io' },
   { name: 'Abijuru Chance Regine', role: 'AI & ML Engineer', image: member, email: 'chance@spartancorp.io' },
   { name: 'Imbabazi Faith', role: 'Backend Developer', image: member, email: 'faith@spartancorp.io' },
   { name: 'Fadhili Josue', role: 'Frontend Developer', image: member, email: 'fadhili@spartancorp.io' }
