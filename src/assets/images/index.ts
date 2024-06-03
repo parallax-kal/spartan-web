@@ -43,3 +43,4 @@ export { default as shoppingCart } from './ShoppingCart.png';
 // members
 export { default as giovanni } from './giovanni.jpg';
 export { default as ghislain } from './ghislain.png';
+export { default as fadhili } from './fadhili.jpeg';

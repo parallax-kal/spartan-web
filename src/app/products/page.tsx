@@ -3,18 +3,10 @@ import SearchInput from '@/components/SearchInput';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { glory } from '@/lib/fonts';
-import { cn } from '@/lib/utils';
-import { Metadata } from 'next';
-import Image from 'next/image';
 import { FC } from 'react';
+import Products from './Products';
 
 interface pageProps {}
-
-export const metadata: Metadata = {
-  title: "Products"
-}
-
 
 const product = {
   image: creep,
@@ -26,6 +18,7 @@ const product = {
 const colors = ['#2C2827', '#002E58', '#561500', '#DA3C00'];
 
 const page: FC<pageProps> = ({}) => {
+
   return (
     <div className="mt-32 flex w-full gap-5 px-10">
       <div className="hidden space-y-6 text-sm lg:block">
@@ -164,28 +157,8 @@ const page: FC<pageProps> = ({}) => {
       </div>
       <div className="w-full">
         <h3 className="mb-8 text-2xl font-bold">Spartan Full Cribs</h3>
-        <div className="grid w-full gap-5 min-[555px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
-          {Array(20)
-            .fill(product)
-            .map(({ image, title, prevPrice, price, name }, i) => (
-              <div key={i} className="w-full overflow-hidden rounded-md bg-[#EBEBEB]">
-                <div className="relative h-[80vw] w-full min-[555px]:h-60 lg:h-[20vw]">
-                  <Image src={image} alt={name} fill className="object-cover" />
-                </div>
-                <div className="p-4">
-                  <h4 className="text-sm font-semibold xl:text-lg">{name}</h4>
-                  <div className="flex items-center justify-between">
-                    <p className={cn(glory.className, 'text-sm font-semibold xl:text-lg')}>
-                      ${price} <sup className="text-xs font-medium line-through">${prevPrice}</sup>
-                    </p>
-                    <p className="cursor-pointer text-[#FFA800] transition-colors hover:underline">
-                      Buy
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-        </div>
+        {/* products */}
+        <Products />
       </div>
     </div>
   );

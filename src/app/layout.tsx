@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { Toaster } from 'sonner'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body className={cn(inter.className, 'w-full overflow-x-hidden bg-white antialiased')}>
         <Navbar />
         {children}
+        <Toaster position="bottom-right" />
         <Footer />
       </body>
     </html>
