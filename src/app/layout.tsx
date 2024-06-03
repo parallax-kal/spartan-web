@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     'Baby crib protector',
     'Innovation'
   ],
-  publisher: 'KALISA INEZA Giovanni',
   metadataBase: new URL('https://spartancorp.io'),
   openGraph: {
     url: 'https://spartancorp.io',

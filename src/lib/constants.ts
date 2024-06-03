@@ -141,31 +141,31 @@ interface Imember {
 export const members: Imember[] = [
   {
     name: 'KALISA INEZA Giovanni',
-    role: 'Team leader and mobile Developer',
+    role: 'Project manager and AI/ML Expert', 
     image: giovanni,
     email: 'giovanni@spartancorp.io'
   },
   {
     name: 'Hirwa Ghislain',
-    role: 'UX/UI Designer & Embedded specialist',
+    role: 'Embedded specialist',
     image: ghislain,
     email: 'ghislain@spartancorp.io'
   },
   {
     name: 'Fadhili Josue',
-    role: 'Frontend Developer',
+    role: 'Mobile Developer',
     image: fadhili,
     email: 'fadhili@spartancorp.io'
   },
   {
     name: 'Abijuru Chance Regine',
-    role: 'AI & ML Engineer',
+    role: 'UI/UX Designer',
     image: chance,
     email: 'chance@spartancorp.io'
   },
   {
     name: 'Imbabazi Faith',
-    role: 'Backend Developer',
+    role: 'Frontend Developer',
     image: faith,
     email: 'faith@spartancorp.io'
   }

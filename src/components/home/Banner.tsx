@@ -38,6 +38,13 @@ const Banner: FC<BannerProps> = ({}) => {
             desc="Download on the"
             app="App Store"
           />
+          
+          <GetAppBtn
+            className="bg-black text-white"
+            Icon={Icons.downIcon}
+            desc="Dowwnload"
+            app="Google play"
+          />
         </div>
       </div>
       <div className="relative right-0 order-first flex w-full flex-col space-y-10 pt-10 text-white md:order-last md:w-1/2 lg:w-3/4 lg:bg-primary-navy lg:px-40 lg:py-52">
