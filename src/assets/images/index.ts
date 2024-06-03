@@ -44,3 +44,5 @@ export { default as shoppingCart } from './ShoppingCart.png';
 export { default as giovanni } from './giovanni.jpg';
 export { default as ghislain } from './ghislain.png';
 export { default as fadhili } from './fadhili.jpeg';
+export { default as chance } from './chance.png';
+export { default as faith } from './faith.jpg';

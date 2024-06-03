@@ -11,7 +11,9 @@ import {
   parents,
   giovanni,
   ghislain,
-  fadhili
+  fadhili,
+  faith,
+  chance
 } from '@/assets/images';
 import { Icons } from '@/components/Icons';
 import { ServicesCardProps } from '@/components/home/Services';
@@ -158,13 +160,13 @@ export const members: Imember[] = [
   {
     name: 'Abijuru Chance Regine',
     role: 'AI & ML Engineer',
-    image: member,
+    image: chance,
     email: 'chance@spartancorp.io'
   },
   {
     name: 'Imbabazi Faith',
     role: 'Backend Developer',
-    image: member,
+    image: faith,
     email: 'faith@spartancorp.io'
   }
 ];
