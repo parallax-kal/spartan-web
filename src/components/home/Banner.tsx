@@ -25,7 +25,7 @@ const Banner: FC<BannerProps> = ({}) => {
         <Paragraph size={'large'} className="mt-6 text-[#A8A8A8] lg:hidden">
           Download app || available on
         </Paragraph>
-        <div className="!mt-4 flex w-fit items-center gap-5 self-center lg:hidden">
+        <div className="!mt-4 ml-20 flex w-fit items-center gap-5 flex-wrap lg:hidden">
           <GetAppBtn
             className="bg-black text-white"
             Icon={Icons.playstore}
@@ -38,13 +38,14 @@ const Banner: FC<BannerProps> = ({}) => {
             desc="Download on the"
             app="App Store"
           />
-          
-          <GetAppBtn
-            className="bg-black text-white"
-            Icon={Icons.downIcon}
-            desc="Dowwnload"
-            app="Google play"
-          />
+          <a href="/spartan.apk">
+            <GetAppBtn
+              className="bg-black text-white"
+              Icon={Icons.downIcon}
+              desc="Download"
+              app="Download here"
+            />
+          </a>
         </div>
       </div>
       <div className="relative right-0 order-first flex w-full flex-col space-y-10 pt-10 text-white md:order-last md:w-1/2 lg:w-3/4 lg:bg-primary-navy lg:px-40 lg:py-52">
@@ -62,6 +63,14 @@ const Banner: FC<BannerProps> = ({}) => {
         <div className="!mt-4 hidden w-fit items-center gap-5 self-center lg:flex">
           <GetAppBtn Icon={Icons.playstore} desc="GET IT ON" app="Google play" />
           <GetAppBtn Icon={Icons.apple} desc="Download on the" app="App Store" />
+          <a href="/spartan.apk">
+            <GetAppBtn
+              // className="bg-black text-white"
+              Icon={Icons.downIcon}
+              desc="Download"
+              app="Download here"
+            />
+          </a>
         </div>
 
         <div className="absolute -bottom-12 right-10 hidden lg:block">
