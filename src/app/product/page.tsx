@@ -3,7 +3,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import MailInput from '@/components/product/MailInput';
 import ProductsCarousel from '@/components/product/ProductsCarousel';
 import LargeHeading from '@/components/ui/LargeHeading';
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { qualities } from '@/lib/constants';
 import { glory } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
@@ -13,12 +13,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
-export const metadata: Metadata = {
-  title: "Product"
-}
-
-
 interface pageProps {}
+
+export const metadata : Metadata = {
+  title: "Product"
+} 
 
 const page: FC<pageProps> = ({}) => {
   return (
@@ -38,9 +37,9 @@ const page: FC<pageProps> = ({}) => {
               <p className="mb-6 mt-3 max-w-sm">
                 New arrivals from handmade masters,Cotton and aluminum in bright red
               </p>
-              <Button className="bg-white px-3 py-1 text-xl font-medium text-black">
+              <Link href={'/products'} className={cn(buttonVariants(),"bg-white px-3 py-1 text-xl font-medium text-black")}>
                 Shop now
-              </Button>
+              </Link>
             </div>
             <div className="h-52 w-52 overflow-hidden rounded-3xl">
               <Image
@@ -59,7 +58,7 @@ const page: FC<pageProps> = ({}) => {
               <p className="text-base sm:text-2xl md:text-base">
                 New arrivals from handmade masters,Cotton and aluminum in bright red
               </p>
-              <Button className="bg-white px-3 py-1  text-xl text-black">Shop now</Button>
+              <Link href={'/products'} className={cn(buttonVariants(),"bg-white px-3 py-1  text-xl text-black")}>Shop now</Link>
             </div>
             <Image
               src={toys}
@@ -145,7 +144,7 @@ const page: FC<pageProps> = ({}) => {
               </div>
               <div className="w-2/3">
                 <Image
-                  src={creep1}
+                  src={'/c1.png'}
                   alt="spartans creep"
                   height={200}
                   width={300}

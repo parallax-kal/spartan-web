@@ -1,7 +1,10 @@
 import Logo from '@/components/Logo'
-import Image from 'next/image'
+import { Metadata } from 'next'
 import Link from 'next/link'
 
+export const metadata : Metadata = {
+  title: "Thank you"
+}
 
 const ThankYouPage = async () => {
   return (

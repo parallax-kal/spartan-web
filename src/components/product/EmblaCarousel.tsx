@@ -3,15 +3,16 @@ import React from 'react';
 import { EmblaOptionsType } from 'embla-carousel';
 import { PrevButton, NextButton, usePrevNextButtons } from './EmblaCarouselArrowButtons';
 import useEmblaCarousel from 'embla-carousel-react';
-import { Iproduct } from './ProductsCarousel';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { glory } from '@/lib/fonts';
 import { Star } from 'lucide-react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import Link from 'next/link';
+import { IProduct } from '@/types';
 
 type PropType = {
-  slides: Iproduct[];
+  slides: (IProduct&{material: string, percentage: number})[];
   options?: EmblaOptionsType;
 };
 
@@ -27,10 +28,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map(
             (
-              { name, image, material, ratings, percentage, price, prevPrice, quantityInStock },
+              { name, image, material, ratings, percentage, price, prevPrice, amountInStock },
               i
             ) => (
-              <div className={cn(glory.className, 'embla__slide')} key={i}>
+              <Link href={`checkout?product=${i}`} className={cn(glory.className, 'embla__slide')} key={i}>
                 <div className="flex flex-col items-center text-center leading-3">
                   <div className="rounded-xl bg-white shadow-[0_0_8px_1px_RGBA(0,0,0,0.2)]">
                     <Image
@@ -61,13 +62,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                   </div>
                   <div className="relative mt-1 h-2 w-full overflow-hidden rounded-full bg-slate-200">
                     <div
-                      className={`absolute h-full bg-gradient-to-b from-[#FFA800] to-black/70 `}
+                      className={`absolute h-full bg-gradient-to-b from-primary to-black/70 `}
                       style={{ width: `${percentage}%` }}
                     />
                   </div>
-                  <p className="mt-2 text-[#727272]">Stock: {quantityInStock}</p>
+                  <p className="mt-2 text-[#727272]">Stock: {amountInStock}</p>
                 </div>
-              </div>
+              </Link>
             )
           )}
         </div>

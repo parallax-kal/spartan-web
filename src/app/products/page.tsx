@@ -5,8 +5,13 @@ import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { FC } from 'react';
 import Products from './Products';
+import { Metadata } from 'next';
 
 interface pageProps {}
+
+export const metadata : Metadata = {
+  title: "Products"
+}
 
 const product = {
   image: creep,

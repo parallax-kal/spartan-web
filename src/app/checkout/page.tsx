@@ -8,11 +8,16 @@ import { Star } from 'lucide-react';
 import Image from 'next/image';
 import { FC } from 'react';
 import ProdOptions from './_components/ProdOptions';
+import { Metadata } from 'next';
 
 interface pageProps { 
   searchParams: {
     product: string | number;
   }
+}
+
+export const metadata : Metadata = {
+  title: "Checkout"
 }
 
 const page = ({ searchParams }:pageProps) => {

@@ -3,8 +3,8 @@ import { EmblaOptionsType } from 'embla-carousel';
 import { FC } from 'react';
 import EmblaCarousel from './EmblaCarousel';
 import '@/styles/embla.css';
-import { StaticImageData } from 'next/image';
-import { bannerCreep } from '@/assets/images';
+import { products } from '@/mocks/products';
+import { IProduct } from '@/types';
 
 interface ProductsCarouselProps {}
 const OPTIONS: EmblaOptionsType = {
@@ -14,31 +14,11 @@ const OPTIONS: EmblaOptionsType = {
 const SLIDE_COUNT = 6;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
-export interface Iproduct {
-  material: string;
-  image: string | StaticImageData;
-  name: string;
-  quantityInStock: number;
-  ratings: 1 | 2 | 3 | 4 | 5;
-  price: number;
-  prevPrice: number;
-  percentage: number;
-}
 
-const product: Iproduct = {
-  material: 'Electronic tools',
-  image: bannerCreep,
-  name: 'Original crib and gadgets',
-  price: 29.99,
-  prevPrice: 32.5,
-  quantityInStock: 10,
-  ratings: 3,
-  percentage: 66
-};
-const products: Iproduct[] = Array(10).fill(product);
+const sproducts: (IProduct & {percentage: number, material: string})[] = products.map((product) => ({...product, percentage: Math.random() * 100, material: 'Electronic tools'}));
 
 const ProductsCarousel: FC<ProductsCarouselProps> = ({}) => {
-  return <EmblaCarousel slides={products} options={OPTIONS} />;
+  return <EmblaCarousel slides={sproducts} options={OPTIONS} />;
 };
 
 export default ProductsCarousel;
