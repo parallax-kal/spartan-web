@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: {
     default: 'Spartan',
-    template: 'Spartan | %s'
+    template: 'Spartan - %s'
   },
   description: 'Spartan - Provide a Safe and comfortable place for your child',
   applicationName: 'Spartan',
