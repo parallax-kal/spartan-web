@@ -4,14 +4,14 @@ import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Toaster } from 'sonner'
+import { Toaster } from 'sonner';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
     default: 'Spartan',
-    template: '%s | Spartan'
+    template: 'Spartan | %s'
   },
   description: 'Spartan - Provide a Safe and comfortable place for your child',
   applicationName: 'Spartan',
@@ -26,7 +26,14 @@ export const metadata: Metadata = {
     'Crib',
     'Baby protector',
     'Baby crib protector',
-    'Innovation'
+    'Innovation',
+    'Child safety',
+    'Baby safety',
+    "Baby's safety",
+    'Baby monitoring',
+    'Baby sleep monitoring',
+    'Baby sleep safety',
+    'Baby sleep'
   ],
   metadataBase: new URL('https://spartancorp.io'),
   openGraph: {
