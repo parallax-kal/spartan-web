@@ -25,14 +25,14 @@ const Footer: FC = () => {
                 <Icons.contact.phone />
               </Link>
             </div>
-            <div className="flex items-center gap-2">
+            <a href="mailto:hi@spartancorp.io" className="flex items-center gap-2">
               <Mail size={15} />
               hi@spartancorp.io
-            </div>
-            <div className="flex items-center gap-2">
+            </a>
+            <a href="tel:+250793085164" className="flex items-center gap-2">
               <Phone size={15} />
               +250793085164
-            </div>
+            </a>
           </div>
           {footerItems.map((e, i) => (
             <div key={i} className="flex w-fit flex-col">

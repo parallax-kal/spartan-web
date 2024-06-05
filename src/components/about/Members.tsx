@@ -82,10 +82,10 @@ const Members: FC = ({}) => {
             </div>
             <h1 className="text-xl font-bold">{e.name}</h1>
             <p className="mb-5 font-semibold">{e.role}</p>
-            <div className="flex items-center gap-2 whitespace-nowrap text-sm">
+            <a href={`mailto:${e.email}`} className="flex items-center gap-2 whitespace-nowrap text-sm">
               <Mail size={15} />
               {e.email}
-            </div>
+            </a>
             <Link
               href={'#'}
               className="group mt-6 flex w-fit transition-all hover:scale-105 hover:underline"
