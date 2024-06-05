@@ -27,11 +27,11 @@ const Footer: FC = () => {
             </div>
             <div className="flex items-center gap-2">
               <Mail size={15} />
-              spartan@gmail.com
+              hi@spartancorp.io
             </div>
             <div className="flex items-center gap-2">
               <Phone size={15} />
-              0045 26 71 99 53
+              +250793085164
             </div>
           </div>
           {footerItems.map((e, i) => (

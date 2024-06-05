@@ -1,6 +1,6 @@
 'use client';
 import { members } from '@/lib/constants';
-import { ArrowUpRight, ChevronLeft, ChevronRight, Phone } from 'lucide-react';
+import { ArrowUpRight, ChevronLeft, ChevronRight, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC, useEffect, useRef, useState } from 'react';
@@ -9,7 +9,6 @@ const Members: FC = ({}) => {
   const [chevAppear, setChevApp] = useState<any>({ left: false, right: false });
   const [winObje, setWindow] = useState({});
   const sliderRef = useRef(null);
-  const curRef: any = sliderRef.current;
   const memberCardRef = useRef<HTMLDivElement>(null);
 
   const handleSliderScroll = (e: any) => {
@@ -84,7 +83,7 @@ const Members: FC = ({}) => {
             <h1 className="text-xl font-bold">{e.name}</h1>
             <p className="mb-5 font-semibold">{e.role}</p>
             <div className="flex items-center gap-2 whitespace-nowrap text-sm">
-              <Phone size={15} />
+              <Mail size={15} />
               {e.email}
             </div>
             <Link
