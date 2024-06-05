@@ -78,14 +78,14 @@ const Members: FC = ({}) => {
                 height={100}
                 width={100}
                 alt={e.name + 'photo'}
-                className="h-5/6 w-5/6 object-cover rounded-full"
+                className="h-5/6 w-5/6 rounded-full object-cover"
               />
             </div>
             <h1 className="text-xl font-bold">{e.name}</h1>
             <p className="mb-5 font-semibold">{e.role}</p>
             <div className="flex items-center gap-2 whitespace-nowrap text-sm">
               <Phone size={15} />
-              +250 799 999 999
+              {e.email}
             </div>
             <Link
               href={'#'}
