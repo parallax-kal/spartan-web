@@ -42,7 +42,7 @@ const page: FC = () => {
           individuals behind the scenes, from experts in technology to community outreach. Together,
           we bring expertise and innovation to every aspect of our project. We are always looking
           for passionate and talented people to join our team. For information on vacancies please
-          check our LinkedIn or contact <strong>hello@Spartan.com</strong>
+          check our LinkedIn or contact <strong>hi@spartancorp.io</strong>
           <Members />
           <div className="mt-10 hidden justify-center md:flex [&>*]:px-6 [&>*]:py-8">
             <h1 className="relative whitespace-nowrap text-end text-xl font-bold after:absolute after:bottom-0 after:right-0 after:h-1/2 after:w-1 after:bg-[#D9D9D9] lg:flex-1">
