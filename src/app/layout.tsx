@@ -71,12 +71,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, 'w-full overflow-x-hidden bg-white antialiased')}>
-        <Analytics />
-        <SpeedInsights />
         <Navbar />
         {children}
         <Toaster position="bottom-right" />
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
