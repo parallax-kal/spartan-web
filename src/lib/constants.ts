@@ -141,9 +141,9 @@ interface Imember {
 export const members: Imember[] = [
   {
     name: 'KALISA INEZA Giovanni',
-    role: 'Project manager and AI/ML Expert', 
+    role: 'CEO and AI/ML Expert', 
     image: giovanni,
-    email: 'giovanni@spartancorp.io'
+    email: 'gthecoderkalisaineza@gmail.com'
   },
   {
     name: 'Hirwa Ghislain',
